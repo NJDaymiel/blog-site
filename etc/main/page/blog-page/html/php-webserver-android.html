@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Codings - Blog Website</title>
+  
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/images/nick-codings.png" type="image/x-icon">
+  
+  <!--
+    - custom css link 
+  -->
+  <link rel="stylesheet" href="/etc/main/page/blog-page/css/page-style.css">
+  
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+  
+  <!--
+    - HEADER
+  -->
+  
+  <header>
+    
+    <div class="container">
+      
+      <nav class="navbar">
+        
+        <a href="#">
+          <img src="/images/logo_light.png" alt="Nick Codings Logo" width="215px" class="logo-light">
+          <img src="/images/logo_dark.png" alt="Nick Codings Logo" width="215px" class="logo-dark">
+        </a>
+        
+        <div class="btn-group">
+          
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button> 
+          
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          
+        </div>
+        
+        <div class="flex-wrapper">
+          
+          <ul class="desktop-nav">
+            
+            <li>
+              <a href="/home.html" class="nav-link">Home</a>
+            </li>
+            
+            <li>
+              <a href="#" class="nav-link">About Me</a>
+            </li>
+            
+            <li>
+              <a href="#" class="nav-link">Contact Me</a>
+            </li>
+            
+          </ul>
+          
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+          
+        </div>
+        
+        <div class="mobile-nav ">
+          
+          <button class="nav-close-btn">
+            <ion-icon  name="close-outline"></ion-icon>
+          </button>
+        
+          <div class="wrapper">
+          
+           <p class="h3 nav-title">Main Menu</p>
+           
+           <ul>
+             <li class="nav-item">
+               <a href="/home.html" class="nav-link">Home</a>
+             </li>
+             
+             <li class="nav-item">
+               <a href="#" class="nav-link">About Me</a>
+             </li>
+             
+             <li class="nav-item">
+               <a href="#" class="nav-link">Contact Me</a>
+             </li>
+           </ul>
+           
+          </div>
+          
+          <div>
+            
+            <p class="h3 nav-title">Topics</p>
+           
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+             
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+             
+              <li class="nav-item">
+               <a href="#" class="nav-link">Web Performance</a>
+              </li>
+           </ul>
+            
+          </div>
+          
+        </div>
+          
+      </nav>
+      
+    </div>
+    
+  </header>
+  
+  
+  
+  
+  
+  <main>
+    
+    <div class="main">
+      
+      <div class="container">
+        
+        <!--
+          - BLOG SECTION
+        -->
+        
+        <div class="blog">
+          
+          
+          <div class="blog-card-group">
+            
+            <div class="blog-card">
+              <h3 class="h1">PHP Webserver on Android using Termux.</h3>
+            </div>
+            
+            <div class="blog-card">
+              
+              <a href="https://youtu.be/pL8dnAENEbk?si=YPhp4n0dCYukm9iO">
+                <div class="blog-card-banner">
+                  <img src="/images/blog-images/php-webserver-android.png" alt="PHP Webserver on Android Using Termux" width="310"
+                    class="blog-banner-img">
+                </div>
+              </a>
+            </div>
+            
+            <div class="blog-card">
+             
+              <p class="blog-text">
+                  This PHP web server is running directly on your
+                  Android phone using Termux! This setup 
+                  allows you to carry a full-fledged web development 
+                  environment in your pocket, perfect for coding 
+                  and testing websites on the go.
+                </p>
+                
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <h1 class="h1" >Installation</h1>
+              <p class="blog-text">
+                So now, open your Termux. Before installing anything, we need to update and upgrade the system in Termux first to ensure we have the latest versions of the software.
+                <br>
+                <br>
+                Use the following commands below to Update and Upgrade the System on Termux.
+              </p>
+              
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+               <ion-icon size="small" name="clipboard-outline"></ion-icon>
+               <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  apt update  
+                  <br>apt upgrade
+                  <br>apt update
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">Next, we need to access Termux from our Internal Storage.</h3>
+              <br>
+              <p class="blog-text">Use the command below to request permission to access to your Internal Storage.</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+               <ion-icon size="small" name="clipboard-outline"></ion-icon>
+               <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  termux-setup-storage
+                </h4>
+              </div>
+            </div>
+              
+            <div class="blog-card">
+              <p class="blog-text">After that you will see a prompt like this ↓</p>
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/termux-setup-storage.png" alt="PHP Webserver on Android Using Termux" width="350"
+                  class="blog-banner-img">
+              </div>
+              <p class="blog-text">Simply tap "Allow" to allow Termux from accessing your internal storage.</p>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">Next, we need to create a directory in your Internal Storage.</h3>
+              <br>
+              <p class="blog-text">By running the command below. You can create a directory named "htdocs" into your phone storage.</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+               <ion-icon size="small" name="clipboard-outline"></ion-icon>
+               <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  mkdir storage/shared/htdocs
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">To navigate to directory "storage/shared/htdocs"</h3>
+              <br>
+              <p class="blog-text">Run the command below.</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  cd storage/shared/htdocs
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">Next, we need to create and write a program named 'index.php' to host it with Apache.</h3>
+              <br>
+              <p class="blog-text">Run the command below to enter code editor mode</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  nano -l index.php
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3>This is what Code Editor Looks Like ↓</h3>
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/code_editor.png" alt="PHP Webserver on Android Using Termux" width="310"
+                  class="blog-banner-img">
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">Next, Write/Copy Paste the Code below ↓.</h3>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">PHP</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  &lt;?php<br>&nbsp;&nbsp;&nbsp;&nbsp;phpinfo();
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">Installing Important Package/Program</h3>
+              <br>
+              <p class="blog-text">Run the command below, to install necessary packages/programs</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  apt install php-apache
+                </h4>
+              </div>
+            </div>
+           
+            <div class="blog-card">
+              <h3 class="h3">Print Working Directory</h3>
+              <br>
+              <p class="blog-text">Run the command below, to show the current directory </p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  pwd
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h4 class="h3">Copy this path/directory later</h4>
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/pwd.png" alt="pwd" width="315"
+                  class="blog-banner-img">
+              </div>
+              <p class="blog-text">/data/data/com.termux/files/home/storage/
+              <br>
+              shared/htdocs</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  cd
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">Change your directory.</h3>
+              <br>
+              <p class="blog-text">Use the command below to change your directory to target directory.</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  cd $PREFIX/etc/apache2
+                </h4>
+              </div>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  ls
+                </h4>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <h3 class="h3">To ensure the directory you navigate to is correct.</h3>
+              <br>
+              <p class="blog-text">You need to see this lists of files</p>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/apache-list-files.jpg" alt="pwd" width="315"
+                  class="blog-banner-img">
+              </div>
+            </div>
+            
+           <div class="blog-card">
+              <h3 class="h3">Afterthat, You need to enter in Code Editor mode.</h3>
+              <br>
+              <p class="blog-text">Use the command below to enter Code Editor mode on the selected file.</p>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  nano -l httpd.conf 
+                </h4>
+              </div>
+            </div>
+            
+            
+            <div class="blog-card">
+              <h3 class="h3">And you are in Code Editor mode.</h3>
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/httpd-conf.jpg" alt="pwd" width="315"
+                  class="blog-banner-img">
+              </div>
+              <p class="blog-text">Now, go to line 53, and copy paste the code below.</p>
+            </div>
+            
+            
+            <div class="copy-card">
+              <h3 class="h3">Command</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 id="code">
+                  ServerName localhost
+                </h4>
+              </div>
+            </div>
+            
+            <div class="copy-card">
+              <h3 class="h3">Code</h3>
+              <button class="copy-button" onclick="copyToClipboard(this)">
+                <ion-icon size="small" name="clipboard-outline"></ion-icon>
+                <h3 class="h3">Copy code</h3>
+              </button>
+              <div class="copy-text">
+                <h4 clads="h5" id="code">
+                  LoadModule php_module libexec/apache2/libphp.so <br> &ltFilesMatch \.php$> <br> &nbsp;&nbsp;&nbsp;&nbsp;SetHandler application/x-httpd-php ;&nbsp <br>&lt;/FilesMatch>
+                </h4>
+              </div>
+            </div>
+            <h3 
+            ></h3>
+            
+           
+          </div>
+       
+        </div>
+       
+        </div>
+       
+  </main>
+  
+  
+  
+  
+  
+  <!---
+    - FOOTER
+  -->
+  
+  <footer>
+    
+    <div class="container">
+      
+      <div class="wrapper">
+        
+        <a href="#" class="footer-logo">
+          <img src="/images/logo_light.png" alt="Nick Codings Logo" class="logo-light" width="215px">
+          <img src="/images/logo_dark.png" alt="Nick Codings Logo" class="logo-dark" width="215px">
+        </a>
+        
+        <p  class="footer-text">
+          Learn about Programming, Networking and Command line interface (CLI)
+        </p>
+        
+      </div>
+      
+      <div class="wrapper">
+        
+        <p class="footer-title">Quick Links</p>
+        
+        <ul>
+          
+          <li>
+            <a href="#" class="footer-link">About Me</a>
+          </li>
+          
+          <li>
+            <a href="#" class="footer-link">Contact Me</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="wrapper">
+        
+        <p class="footer-title">Explore More</p>
+        
+        <ul>
+          
+          <li>
+            <a href="#" class="footer-link">Tags</a>
+          </li>
+          
+          <li>
+            <a href="#" class="footer-link">Topics</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      
+    </div>
+    
+    <p class="copyright">
+      &copy; Copyright 2024 <a href="https://www.youtube.com/@nick-codings">Nick Codings</a>
+    </p>
+    
+  </footer>  
+  
+  
+  
+  
+  <!--
+    - custom js link 
+  -->
+  <script src="/etc/main/page/blog-page/js/script.js"></script>
+  
+  <!--
+    - ionicon link 
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+

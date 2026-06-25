@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Codings - Blog Website</title>
+  
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images/nick-codings.png" type="image/x-icon">
+  
+  <!--
+    - custom css link 
+  -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+  
+  <!--
+    - HEADER
+  -->
+  
+  <header>
+    
+    <div class="container">
+      
+      <nav class="navbar">
+        
+        <a href="#">
+          <img src="images/logo_light.png" alt="Nick Codings Logo" width="215px" class="logo-light">
+          <img src="images/logo_dark.png" alt="Nick Codings Logo" width="215px" class="logo-dark">
+        </a>
+        
+        <div class="btn-group">
+          
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button> 
+          
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          
+        </div>
+        
+        <div class="flex-wrapper">
+          
+          <ul class="desktop-nav">
+            
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            
+            <li>
+              <a href="#" class="nav-link">About Me</a>
+            </li>
+            
+            <li>
+              <a href="#" class="nav-link">Contact Me</a>
+            </li>
+            
+          </ul>
+          
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+          
+        </div>
+        
+        <div class="mobile-nav ">
+          
+          <button class="nav-close-btn">
+            <ion-icon  name="close-outline"></ion-icon>
+          </button>
+        
+          <div class="wrapper">
+          
+           <p class="h3 nav-title">Main Menu</p>
+           
+           <ul>
+             <li class="nav-item">
+               <a href="#" class="nav-link">Home</a>
+             </li>
+             
+             <li class="nav-item">
+               <a href="#" class="nav-link">About Me</a>
+             </li>
+             
+             <li class="nav-item">
+               <a href="#" class="nav-link">Contact Me</a>
+             </li>
+           </ul>
+           
+          </div>
+          
+          <div>
+            
+            <p class="h3 nav-title">Topics</p>
+           
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Command Line Interface (CLI)</a>
+              </li>
+             
+              <li class="nav-item">
+                <a href="#" class="nav-link">Networking</a>
+              </li>
+             
+              <li class="nav-item">
+               <a href="#" class="nav-link">Programming</a>
+              </li>
+           </ul>
+            
+          </div>
+          
+        </div>
+          
+      </nav>
+      
+    </div>
+    
+  </header>
+  
+  <main>
+    
+   <!--
+     - HERO SECTION
+   -->
+   
+    <div class="hero">
+      
+      <div class="container">
+        
+        <div class="left">
+          
+          <h1 class="h1">
+            Hi, I'm <b>Nick Codings&nbsp;</b>.
+            <br>Programmer & Web Developer 
+          </h1>
+          
+          <p class="h3">
+            If you want to learn Programming.
+            Subscribe to Nick Codings.
+          </p>
+          
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary">Contact Me</a>
+            <a href="https://www.youtube.com/@nick-codings" class="btn btn-secondary">Subscribe</a>
+          </div>
+          
+        </div>
+        
+        <div class="right">
+          
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="images/nick-codings.png" alt="Nick Codings" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="main">
+      
+      <div class="container">
+        
+        <!--
+          - BLOG SECTION
+        -->
+        
+        <div class="blog">
+          
+          <h2 class="h2">Latest Blog Post</h2>
+          
+          <div class="blog-card-group">
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/php-webserver-android.png" alt="PHP Webserver on Android Using Termux" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">PROGRAMMING</button>
+                
+                <h3>
+                  <a href="/etc/main/page/blog-page/html/php-webserver-android.html" class="h3">
+                    PHP Webserver on Android using Termux
+                  </a>
+                </h3>
+                
+                <p class="blog-text">
+                  This PHP web server is running directly on your
+                  Android phone using Termux! This setup 
+                  allows you to carry a full-fledged web development 
+                  environment in your pocket, perfect for coding 
+                  and testing websites on the go.
+                </p>
+               
+                <div class="wrapper-flex">
+                 
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2024-4-7">April 7, 2024</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/apache2.png" alt="Host your website from your android phone with Termux using Apache2 Web Server" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">Networking</button>
+                
+                <h3><a href="#" class="h3">Host your website from your android phone with Termux using Apache2 Web Server</a></h3>
+                
+                <p class="blog-text">
+                  Imagine you're creating a website on your Android phone and you want to access it from 
+                  your another device. With Termux and Apache2 HTTP server,you can host your website and 
+                  view it on your other devices through a localhost connection.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2024-3-31">March 31, 2024</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/kali_nethunter_error.png" alt="How to fix Kali Nethunter apt update error" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">Troubleshooting</button>
+                
+                <h3><a href="#" class="h3">How to fix Kali Nethunter apt update error </a></h3>
+                
+                <p class="blog-text">
+                  In this blog, you will learn how to fix the Kali Nethunter 
+                  apt update error. This error commonly occurs on newly installed
+                  Kali Nethunter on Termux. It is caused by the default nameserver 
+                  configuration. To fix the apt update error, you just need to add
+                  another DNS server.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2023-8-9">August 9, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/wttr.png" alt="How to check weather status using Termux or in other terminals" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">Command-line interface (CLI)</button>
+                
+                <h3><a href="#" class="h3">How to check weather status using Termux or in other terminals</a></h3>
+                
+                <p class="blog-text">
+                  In this blog, I am going 
+                  to show you how to check
+                  the weather status using 
+                  Termux.It also works on 
+                  other terminals.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2023-8-8">August 8, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/speedtest-go.png" alt="Check Network Download Speed and Upload Speed Using Termux" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">Command-line interface</button>
+                
+                <h3><a href="#" class="h3">Check Network Download Speed and Upload Speed Using Termux</a></h3>
+                
+                <p class="blog-text">
+                  Speed-testing Software
+                  in Termux?With speedtest-go,
+                  you can check your Network
+                  Download Speed and Upload
+                  Speed with just one command,
+                  making it hassle-free.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2023-8-6">August 6, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/qr_code_generator.png" 
+                 alt="I Made a Program that Generates the Link into a QR Code" width="310"
+                 class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">PROGRAMMING</button>
+                
+                <h3><a href="#" class="h3">I Made a Program that Generates the Link into a QR Code</a>
+                </h3>
+                
+                <p class="blog-text">
+                  If you're wondering how to make a QR Code
+                  that navigates you to a link, this blog is 
+                  for you! In this blog, you will learn how
+                  to generate a QR Code of a link by simply
+                  adding the link to the string.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2023-6-17">June 17, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/fraction_calculator.png" alt="Fraction Calculator Program in Python" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">PROGRAMMING</button>
+                
+                <h3><a href="#" class="h3">Fraction Calculator Program in Python</a></h3>
+                
+                <p class="blog-text">
+                  Are you a programmer and then you're getting tired of 
+                  solving fractions for your Mathematics subject? Then
+                  let's create a Fraction Calculator Program in Python. 
+                  This will make your Mathematics subject easier and
+                  hassle-free.Say goodbye to manual calculations.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2023-6-11">June 11, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/ip_address_tracer.png" alt="IP Address Tracer Program in Python" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">PROGRAMMING</button>
+                
+                <h3><a href="#" class="h3">IP Address Tracer Program in Python</a></h3>
+                
+                <p class="blog-text">
+                  This Python program gets data from the
+                  entered IP Address, revealing details 
+                  such as City, Province, County, Latitude,
+                  and Longitude. Uncover valuable information
+                  from the specified IP Address.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2023-6-5">Jun 5, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/change_password_smart_bro_home_wifi.png" 
+                  alt="Paano mag Change ng WiFi Password sa Smart Bro Home Wifi Router Evoluzn FX-ID3" width="310"
+                  class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">Networking</button>
+                
+                <h3><a href="#" class="h3">Paano mag Change ng WiFi Password sa Smart Bro Home Wifi Router Evoluzn FX-ID3</a>
+                </h3>
+                
+                <p class="blog-text">
+                  Ang blog na ito ay tungkol lamang sa pag change ng WiFi Password ng Smart Bro Home Wifi FX-ID3
+                  , Ipinapakita dito sa Blog na ito ang step ny step na procedure sa pag change ng WiFi Password 
+                  hanggang sa pag reconnect nito sa iyong WiFi atsaka meron ding mga paliwanag dito para hindi ka
+                  mahihirapan sa pag Change ng Iyong Wifi Password
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2024-5-1">May 1, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+            <div class="blog-card">
+              
+              <div class="blog-card-banner">
+                <img src="/images/blog-images/phoneinfoga.png" alt="Phone Information Gathering Program in Python" 
+                  width="310" class="blog-banner-img">
+              </div>
+              
+              <div class="blog-content-wrapper">
+                
+                <button class="blog-topic text-tiny">PROGRAMMING</button>
+                
+                <h3><a href="#" class="h3">Phone Information Gathering Program in Python</a></h3>
+                
+                <p class="blog-text">
+                  This program can gather information 
+                  by simply entering any phone number.
+                  It extracts details of the phone number
+                  such as the country, carrier, and time
+                  zone.
+                </p>
+                
+                <div class="wrapper-flex">
+                  
+                  <div class="profile-wrapper">
+                    <img src="images/nick-codings.png" alt="Nick Codings" width="50">
+                  </div>
+                  
+                  <div class="wrapper">
+                    <a href="#" class="h4">Nick Codings</a>
+                    
+                    <p class="text-sm">
+                      <time datetime="2023-4-23">April 23, 2023</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+          </div>!
+          
+          <button class="btn view-all-post">View All Post</button>
+          
+        </div>
+        
+        
+        
+        
+        
+        <!--
+          - ASIDE
+        -->
+        
+        <div class="aside">
+          
+          <div class="topics">
+            
+            <h2 class="h2">Topics</h2>
+            
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+              
+              <p>Programming</p>
+            </a>
+            
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="terminal-outline"></ion-icon>
+              </div>
+              
+              <p>Command Line Interface (CLI)</p>
+            </a>
+           
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="cellular-outline"></ion-icon>
+              </div>
+              
+              <p>Networking</p>
+            </a>
+            
+          </div>
+          
+          <div class="tags">
+            
+            <h2 class="h2">Tags</h2>
+            
+            <div class="wrapper">
+              
+              <button class="hashtag" onclick="window.location.href='#'">#Programming</button>
+              <button class="hashtag" onclick="window.location.href='#'">#Python</button>
+              <button class="hashtag" onclick="window.location.href='#'">#Termux</button>
+              <button class="hashtag" onclick="window.location.href='#'">#Networking</button>
+              <button class="hashtag" onclick="window.location.href='#'">#SmartBroHomeWifi</button>
+              <button class="hashtag" onclick="window.location.href='#'">#WebDevelopment</button>
+              <button class="hashtag" onclick="window.location.href='#'">#WebServer</button>
+              <button class="hashtag" onclick="window.location.href='#'">#ApacheHTTPServer</button>
+              
+            </div>
+            
+          </div>
+          
+          <div class="contact">
+            
+            <h2 class="h2">Let's Talk</h2>
+            
+            <div class="wrapper">
+              
+              <p>
+                Do you want to Learn more about how i can help your company overcome problems? Let's us have a
+                conversation.
+              </p>
+              
+              <ul class="social-link">
+                
+                <li>
+                  <a href="" class="icon-box google">
+                    <ion-icon name="logo-google"></ion-icon>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="" class="icon-box Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </div>
+            
+          </div>
+          
+          <div class="newsletter">
+            
+            <h2 class="h2">Newsletter</h2>
+            
+            <div class="wrapper">
+              
+              <p>
+                Subscribe to our newsletter to be among the first to keep with the latest update
+              </p>
+              
+              <form action="#">
+                <input type="email" name="email" placeholder="Email Address" required>
+                
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      
+    </div>
+    
+  </main>
+  
+  
+  
+  
+  
+  
+  <!---
+    - FOOTER
+  -->
+  
+  <footer>
+    
+    <div class="container">
+      
+      <div class="wrapper">
+        
+        <a href="#" class="footer-logo">
+          <img src="images/logo_light.png" alt="Nick Codings Logo" class="logo-light" width="215px">
+          <img src="images/logo_dark.png" alt="Nick Codings Logo" class="logo-dark" width="215px">
+        </a>
+        
+        <p  class="footer-text">
+          Learn about Programming, Networking and Command line interface (CLI)
+        </p>
+        
+      </div>
+      
+      <div class="wrapper">
+        
+        <p class="footer-title">Quick Links</p>
+        
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">About Me</a>
+          </li>
+          
+          <li>
+            <a href="#" class="footer-link">Contact Me</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="wrapper">
+        
+        <p class="footer-title">Explore More</p>
+        
+        <ul>
+          
+          <li>
+            <a href="#" class="footer-link">Topics</a>
+          </li>
+          
+          <li>
+            <a href="#" class="footer-link">Tags</a>
+          </li>
+     
+          
+        </ul>
+        
+      </div>
+
+    </div>
+    
+    <p class="copyright">
+      &copy; Copyright 2024 <a href="https://www.youtube.com/@nick-codings">Nick Codings</a>
+    </p>
+    
+  </footer>
+  
+  
+  
+  
+  
+  <!--
+    - custom js link 
+  -->
+  <script src="js/script.js"></script>
+  
+  <!--
+    - ionicon link 
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
